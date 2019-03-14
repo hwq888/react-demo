@@ -1,14 +1,20 @@
 import React from 'react';
 import {HashRouter, Route, Switch} from 'react-router-dom';
-import Home from '../pages/home/home.js';
-import Detail from '../pages/detail/detail.js';
-
+import asyncComponent from './asyncComponent';
+// import Home from '../pages/home/home.js';
+// import Detail from '../pages/detail/detail.js';
+const Home = asyncComponent(() => import("../pages/home/home.js"));
+const Detail = asyncComponent(() => import("../pages/detail/detail.js"));
+const routerPage = asyncComponent(() => import("../pages/routerPage/routerPage"));
+const childRouter = asyncComponent(() => import("../pages/routerPage/childRouter"));
 
 const BasicRoute = () => (
     <HashRouter>
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/detail" component={Detail}/>
+            <Route exact path="/detail/:id" component={Detail}/>
+            <Route exact path="/routerPage" component={routerPage}/>
+            <Route exact path="/childRouter" component={childRouter}/>
         </Switch>
     </HashRouter>
 );
