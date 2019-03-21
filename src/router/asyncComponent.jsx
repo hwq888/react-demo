@@ -1,6 +1,3 @@
-/*
-* 异步加载组件
-* */
 import React, { Component } from "react";
 
 export default function asyncComponent(importComponent) {
