@@ -119,6 +119,7 @@
   "devDependencies": {
     "lib-flexible": "^0.3.2",
     "node-sass": "^4.11.0",
-    "postcss-px2rem": "^0.3.0"
+    "postcss-px2rem": "^0.3.0",
+    "react-router-dom": "^5.0.0"
   }
 }
