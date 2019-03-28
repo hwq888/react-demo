@@ -7,8 +7,7 @@ import {
 } from 'react-router-dom';
 import './router.scss';
 import Home from './home/Home';
-import About from './about/About';
-import Topics from './topics/Topics';
+import Redux from './reactRedux/Redux';
 
 class RouterPage extends Component {
   render() {
@@ -17,14 +16,11 @@ class RouterPage extends Component {
             <div>
                 <ul>
                     <li><Link to='/'>首页</Link></li>
-                    <li><NavLink to='/about' activeClassName="selected">关于</NavLink></li>
-                    {/*<li><NavLink to='/about' isActive={oddEvent}>Event 123</NavLink></li>*/}
-                    <li><Link to='/topics'>主题列表</Link></li>
+                    <li><Link to='/redux'>Redux基本使用</Link></li>
                 </ul>
                 <hr/>
                 <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/topics" component={Topics} />
+                <Route path="/redux" component={Redux} />
             </div>
         </Router>
     );
