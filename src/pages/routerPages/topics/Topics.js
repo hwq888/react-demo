@@ -1,5 +1,5 @@
 /**
- * Created by mapbar_front on 2018/3/18.
+ * Created on 2018/3/18.
  */
 import React,{ Component} from 'react';
 
