@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import TodoApp from './pages/reactRedux/TodoApp';
+// import TodoApp from './pages/reactRedux/TodoApp';
+import Router from './pages/demo2/router';
 import * as serviceWorker from './serviceWorker';
 import 'lib-flexible'
 
 ReactDOM.render(
     <Provider store={store}>
-        <TodoApp />
+        <Router />
     </Provider>,
     document.getElementById('root')
 );
