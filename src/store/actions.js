@@ -1,4 +1,5 @@
 import { ADD_TODO, TOGGLE_TODO, SET_FILTER } from "./actionTypes";
+import axios from 'axios'
 
 let nextTodoId = 0;
 
@@ -15,4 +16,24 @@ export const toggleTodo = id => ({
   payload: { id }
 });
 
-export const setFilter = filter => ({ type: SET_FILTER, payload: { filter } });
+export const setFilter = filter => ({ 
+  type: SET_FILTER, 
+  payload: { filter } 
+});
+
+
+export const initListAction = id => ({
+});
+
+export const getTodoList = () => {
+  return (dispatch) => {
+    axios.get('/list.json').then((res) => {
+      // const data = res.data
+      // const action = initListAction(data)
+      // dispatch(action)
+    }).catch((error) => {
+      const data = ["a","b","c"]
+      console.log(data)
+    })
+  }
+}

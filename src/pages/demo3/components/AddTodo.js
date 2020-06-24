@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addTodo } from "../../../store/actions";
+import { addTodo, getTodoList } from "../../../store/actions";
+import store from "../../../store";
 
 class AddTodo extends React.Component {
   constructor(props) {
@@ -33,6 +34,13 @@ class AddTodo extends React.Component {
         </button>
       </div>
     );
+  }
+
+  componentDidMount () {
+    // 异步action
+    const action = getTodoList();
+    store.dispatch(action)
+    // console.log(action)
   }
 }
 
