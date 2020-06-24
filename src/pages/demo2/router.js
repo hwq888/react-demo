@@ -17,7 +17,7 @@ const App = asyncComponent(() => import("./app"));
 // const User = asyncComponent(() => import("./pages/user"));
 const Login = asyncComponent(() => import("./pages/login"));
 
-class Router extends Component {
+class Demo2 extends Component {
     render() {
         return (
             <HashRouter>
@@ -34,4 +34,4 @@ class Router extends Component {
     }
 }
 
-export default Router;
+export default Demo2;

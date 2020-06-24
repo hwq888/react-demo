@@ -15,15 +15,6 @@ export default class About extends Component{
                     <p>this.props.history.goBack();</p>
                     <p>Link,NavLink,a标签</p>
                 </div>
-                <div>
-                    <p>1、路由跳转：</p>
-                    <p>this.props.history.push('detail');</p>
-                    <p>this.props.history.replace('/detail');</p>
-                    <p>this.props.history.goBack();</p>
-                    <p>Link,NavLink,a标签</p>
-                </div>
-
-
             </div>
         )
     }

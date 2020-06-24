@@ -7,24 +7,24 @@ import {
 } from 'react-router-dom';
 import './router.scss';
 import Home from './home/Home';
-import Redux from './reactRedux/Redux';
+import About from './about/About';
 
-class RouterPage extends Component {
+class Demo1 extends Component {
   render() {
     return (
         <Router>
             <div>
                 <ul>
                     <li><Link to='/'>首页</Link></li>
-                    <li><Link to='/redux'>Redux基本使用</Link></li>
+                    <li><Link to='/about'>about路由跳转</Link></li>
                 </ul>
                 <hr/>
                 <Route exact path="/" component={Home} />
-                <Route path="/redux" component={Redux} />
+                <Route path="/about" component={About} />
             </div>
         </Router>
     );
   }
 }
 
-export default RouterPage;
+export default Demo1;

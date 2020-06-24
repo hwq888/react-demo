@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
+// import Demo1 from './pages/demo1/RouterPage';
+
+// import Demo2 from './pages/demo2/router';
+
 import { Provider } from "react-redux";
 import store from "./redux/store";
-// import TodoApp from './pages/reactRedux/TodoApp';
-import Router from './pages/demo2/router';
+import Demo3 from './pages/demo3/TodoApp';
+
 import * as serviceWorker from './serviceWorker';
 import 'lib-flexible'
 
 ReactDOM.render(
+    // <Demo1 />,
+    // <Demo2 />,
     <Provider store={store}>
-        <Router />
+        <Demo3 />
     </Provider>,
     document.getElementById('root')
 );
