@@ -6,7 +6,7 @@ import './index.scss';
 // import Demo2 from './pages/demo2/router';
 
 import { Provider } from "react-redux";
-import store from "./redux/store";
+import store from "./store";
 import Demo3 from './pages/demo3/TodoApp';
 
 import * as serviceWorker from './serviceWorker';
