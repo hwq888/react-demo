@@ -1,8 +1,8 @@
 import React from "react";
 import Todo from "./Todo";
 import { connect } from "react-redux";
-import { getTodos } from "../../../redux/selectors";
-import {toggleTodo} from "../../../redux/actions";
+import { getTodos } from "../../../store/selectors";
+import {toggleTodo} from "../../../store/actions";
 
 const TodoList = ({ todos,toggleTodo }) => (
   <ul className="todo-list">
