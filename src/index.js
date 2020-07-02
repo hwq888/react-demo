@@ -5,9 +5,11 @@ import './index.scss';
 
 // import Demo2 from './pages/demo2/router';
 
-import { Provider } from "react-redux";
-import store from "./store";
-import Demo3 from './pages/demo3/TodoApp';
+// import { Provider } from "react-redux";
+// import store from "./store";
+// import Demo3 from './pages/demo3/TodoApp';
+
+import Demo4 from './pages/demo4/router';
 
 import * as serviceWorker from './serviceWorker';
 import 'lib-flexible'
@@ -15,9 +17,10 @@ import 'lib-flexible'
 ReactDOM.render(
     // <Demo1 />,
     // <Demo2 />,
-    <Provider store={store}>
-        <Demo3 />
-    </Provider>,
+    // <Provider store={store}>
+    //     <Demo3 />
+    // </Provider>,
+    <Demo4 />,
     document.getElementById('root')
 );
 

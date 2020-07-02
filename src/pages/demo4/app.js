@@ -10,12 +10,11 @@ import asyncComponent from './utils/asyncComponent';
 import PrivateRoute from './components/PrivateRoute';
 // import './static/iconfont.css'
 // import './static/style/main.scss'
-
 import Header from './components/Header';
 import Tabbar from './components/Tabbar';
 const Home = asyncComponent(() => import("./pages/home"));
+const Classify = asyncComponent(() => import("./pages/classify"));
 const Car = asyncComponent(() => import("./pages/car"));
-const Ctgr = asyncComponent(() => import("./pages/ctgr"));
 const User = asyncComponent(() => import("./pages/user"));
 
 class App extends Component {
@@ -29,7 +28,7 @@ class App extends Component {
                     <div className="main-container">
                         <Switch>
                         <Route path={`${this.props.match.path}/home`} component={Home} />
-                        <Route path={`${this.props.match.path}/ctgr`} component={Ctgr} />
+                        <Route path={`${this.props.match.path}/classify`} component={Classify} />
                         <Route path={`${this.props.match.path}/car`} component={Car} />
                         <PrivateRoute path={`${this.props.match.path}/user`} component={User} />
                         {/*<Route path={`${this.props.match.path}/user`} component={User} />*/}
