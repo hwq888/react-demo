@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import FastClick from 'fastclick'
 import './index.scss';
 // import Demo1 from './pages/demo1/RouterPage';
 
@@ -13,6 +14,8 @@ import Demo4 from './pages/demo4/router';
 
 import * as serviceWorker from './serviceWorker';
 import 'lib-flexible'
+
+FastClick.attach(document.body);
 
 ReactDOM.render(
     // <Demo1 />,

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     BrowserRouter as Router,
     Route,
-    NavLink,
+    // NavLink,
     Link
 } from 'react-router-dom';
 import './router.scss';

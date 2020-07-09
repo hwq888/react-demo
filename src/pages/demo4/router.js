@@ -17,8 +17,9 @@ class Demo4 extends Component {
             <HashRouter>
                 <Switch>
                     <Route path="/app" component={App} />
+                    <Route path='/' exact strict render={()=>(<Redirect to='/app/home' />)}></Route>
                     <Route path="/login" component={Login} />
-                    <Redirect exact strict from="/" to="/app/home" />
+                    {/* <Redirect exact strict from="/" to="/app/home" /> */}
                 </Switch>
             </HashRouter>
         )

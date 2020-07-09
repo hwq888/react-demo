@@ -37,7 +37,7 @@ class Tabbar extends Component {
         };
 
         render() {
-            // const url = window.location.href;
+            const url = window.location.href;
             return (
                 <div className="tabbar-container">
                     <div className="tabbar">
@@ -45,9 +45,9 @@ class Tabbar extends Component {
                             {
                                 tabbarArr.map((item,index)=>(
                                     <NavLink to={item.link} key={index}
-                                          className="tabbar-item"
-                                          activeClassName="active"
-                                          // className={"tabbar-item " + (url.indexOf(item.link) >-1?'active':'')}
+                                        //   className="tabbar-item"
+                                        //   activeClassName="active"
+                                          className={"tabbar-item " + (url.indexOf(item.link) >-1?'active':'')}
                                         // onClick={()=>this.itemChange(index)}
                                     >
                                         <div className={'iconfont '+ item.img}></div>
