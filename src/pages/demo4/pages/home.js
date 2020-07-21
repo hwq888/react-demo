@@ -11,7 +11,7 @@ class Home extends Component {
         return (
             <div>
                 <h1 className="content">首页</h1>
-                <Button type="primary">primary</Button>
+                <Button type="primary" className="btn">primary</Button>
                 {/* <NavLink to='/login'><img className="bg" src={require('../static/imgs/home.png')} alt=""/></NavLink> */}
             </div>
         );
