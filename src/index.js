@@ -10,7 +10,9 @@ import './index.scss';
 // import store from "./store";
 // import Demo3 from './pages/demo3/TodoApp';
 
-import Demo4 from './pages/demo4/router';
+// import Demo4 from './pages/demo4/router';
+
+import Demo5 from './pages/demo4/router';
 
 import * as serviceWorker from './serviceWorker';
 import 'lib-flexible'
@@ -23,7 +25,8 @@ ReactDOM.render(
     // <Provider store={store}>
     //     <Demo3 />
     // </Provider>,
-    <Demo4 />,
+    // <Demo4 />,
+    <Demo5 />,
     document.getElementById('root')
 );
 

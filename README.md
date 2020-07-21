@@ -21,3 +21,7 @@ demo4：
 - 加入node-sass
 - 布局方案lib-flexible和postcss-px2rem
 - 使用antd-mobile，按需加载
+
+### `demo5`
+demo5：
+- redux实际运用（修改公共头部标题）
