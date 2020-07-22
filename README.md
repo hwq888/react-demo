@@ -24,4 +24,5 @@ demo4：
 
 ### `demo5`
 demo5：
-- redux实际运用（修改公共头部标题）
+- redux,react-redux实际运用（修改公共头部标题）
+- redux-thunk 实现redux中间件异步请求

@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { connect } from "react-redux";
+import { commSetTitle } from "../../store/comm/commActionCreators";
 // 购物车
 class Car extends Component {
     render() {
@@ -10,5 +12,12 @@ class Car extends Component {
             </div>
         );
     }
+    componentWillMount = () => {
+        this.props.commSetTitle('购物车');
+    }
 }
-export default Car;
+// export default Car;
+export default connect(
+    null,
+    { commSetTitle }
+)(Car);

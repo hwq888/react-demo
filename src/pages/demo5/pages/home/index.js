@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import { connect } from "react-redux";
+import { commSetTitle } from "../../store/comm/commActionCreators";
 import { Button } from 'antd-mobile';
 import './home.scss'
 // import {
@@ -7,6 +9,10 @@ import './home.scss'
 // } from 'react-router-dom';
 // 首页
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {}
+    }
     render() {
         return (
             <div>
@@ -16,13 +22,22 @@ class Home extends Component {
             </div>
         );
     }
+    componentWillMount = () => {
+        console.log('componentWillMount')
+        this.props.commSetTitle('首页');
+    }
     componentDidMount = () => {
-    //    代理测试
+        console.log('componentDidMount')
+        // 代理测试
         axios.get('/index/recommend.json')
             .then((res) => {
                     console.log(res.data.list);
             })
-       
+        
     }
 }
-export default Home;
+// export default Home;
+export default connect(
+    null,
+    { commSetTitle }
+)(Home);

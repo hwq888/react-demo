@@ -1,0 +1,1 @@
+export const SET_TITLE = 'home/SET_TITLE';

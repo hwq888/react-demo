@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { connect } from "react-redux";
+import { commSetTitle } from "../../store/comm/commActionCreators";
 // 分类
 class Classify extends Component {
     render() {
@@ -9,6 +11,13 @@ class Classify extends Component {
             </div>
         );
     }
+    componentWillMount = () => {
+        this.props.commSetTitle('分类');
+    }
 }
 
-export default Classify;
+// export default Classify;
+export default connect(
+    null,
+    { commSetTitle }
+)(Classify);
